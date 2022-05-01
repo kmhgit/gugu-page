@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
  
+    <!--  version:20220501  -->
 
     <!--type="text/css"是告訴瀏覽器，這段標籤的内容是css或text，如果瀏覽器不能識别css，會將它當作text，既不顯示也不報錯，也可以刪除，直接用<style>即可-->
     <style type="text/css">
@@ -34,14 +35,17 @@
 
     </style>
 
-    <script>
-        function large( id ) { /* 滑鼠移至照片放大 */
-	         id.style.width="360px";
-        }
-	    function normal( id ) {
-	         id.style.width="220px";
-	    }
-    </script>
+<script>
+    function large( id ) { /* 滑鼠移至照片放大:onmouseover="large(this)" 按一下照片放大:onclick="large(this)"-- 跨平台網頁設計10－2 */
+         id.style.width="760px";
+    }
+    function normal( id ) {
+         id.style.width="180px";
+    }
+    function normal2( id ) {
+         id.style.width="260px";
+    }
+</script>
      
 </head>
 
@@ -54,221 +58,364 @@
     <br>
     <tr>
         <td>
+            <!--中文字寬:16px  
+                &nbsp;(No-Break Space，不換行空格):鍵盤按下空白鍵會出現的字元，空格寬度會受字體影響
+            --> 
             <p>&nbsp;&nbsp;&nbsp;&nbsp;
                 嗨！大家好！我是日本雞-咕咕。2020年疫情剛起，離家出走的我，誤闖暖江橋車陣
-              ，幸善心人出手相救，把我送往中漁新村養雞人家安置；只是，不習慣雞多嘴雜，我
-               決定不告而別，來到郵局旁榕樹下落腳；歲月悠悠，已一年餘。這些日子，受到十方大德
+              ，幸善心人出手相救，把我送往中漁新村養雞人家安置；只是，不習慣雞多嘴雜，咕咕
+               決定不告而別，來到過港郵局旁榕樹下落腳；歲月悠悠，已一年餘。這些日子，受到十方大德
                餵食看顧，三餐無虞，生活逍遙自在。近日，咕咕察覺：來往路人
                流連佇足、對我傻笑？還有痴迷者組團參訪，讓咕咕席不暇暖；更甚者，竟游手好閒為我寫網頁！
                眼看粉絲與日俱增，都快成為萬人迷了!(嘻嘻～)咕咕這般的際遇，或許是因緣吧？
-               Anyway，感恩啦!
+               Anyway，感恩、惜福啦!&nbsp;&nbsp;&nbsp;&nbsp;(2022.03.29-04.04咕咕神隱七日，04.05在
+               過港里民大會堂廣場旁花圃重現！為何神隱？咕咕無言以對……)
             </p>
         </td>
     </tr>
     </table> 
-
-    <!--
-    
-    <br>  
-    <h4>咕咕寫真</h4>
-
-    <table border=1 width="660" cellpadding="5">
-    <tr>
-        <td>1.歡迎光臨</td>
-        <td><center><a href="花圃納涼.html">
-            花圃納涼</a></center></td>
-        <td><center><a href="郵局采風.html">
-            郵局采風</a></center></td>
-        <td><center><a href="樹上棲息.html">
-            樹上棲息</a></center></td>
-        <td><center><a href="住家地圖.html">     
-            住家地圖</a></center></td>
-    </tr>    
-    <tr>
-        <td>2.日常剪影</td>    
-        <td><center><a href="過港牌坊.html">
-            過港牌坊</a></center></td>
-        <td><center><a href="廣場閒逛.html">
-            廣場閒逛</a></center></td>
-        <td><center><a href="沙浴澎澎.html">
-            沙浴澎澎</a></center></td>
-        <td><center><a href="啄食蟲蟲.html">
-            啄食蟲蟲</a></center></td>
-    </tr>
-    <tr>
-        <td>3.下蛋傑作</td>
-        <td><center><a href="雙蛋.html">
-            雙蛋</a></center></td>
-        <td><center><a href="參蛋.html">
-            參蛋</a></center></td>    
-        <td><center><a href="七蛋.html">
-            七蛋</a></center></td>
-        <td><center><a href="諸蛋匯集.html">
-            諸蛋匯集</a></center></td>  
-    </tr>       
-    </table>         
-    <br> 
-
-    --> 
-
-    <!--<div class="box1"> 
-    -->    
-    <!--http://gifgifs.com/  : Free animated GIFs, free GIF animations ...在github網站無法顯示！！
-      
-        <img src="http://gifgifs.com/animations/animals/chickens-and-turkeys/Busy_chicken.gif" 
-            border=0 alt="http://gifgifs.com" width="100">
-    -->
        
-    <!--滑鼠移至照片放大-->
-    <!--  為什麼網頁連結的圖片路徑沒錯，圖片卻有出不來的現象
+            <!--滑鼠移至照片放大-->
+            <!--  為什麼網頁連結的圖片路徑沒錯，圖片卻有出不來的現象
 
-            檢視一:先看連結的圖片是否上傳，圖片名稱是否跟連結的名稱一致
-            檢視二:看圖片名稱是否是英文檔名或小寫。中文檔名跟英文大寫也會導致圖片有無法顯示的現象。
-                  圖片是中文檔名或英文大寫解決方法，當然是全改成英文檔名與小寫。
-    -->
-    <br>   
-    <tr>
-    <div class="container">
-        <div class="alert alert-danger">
-            <h5>【日常剪影】</h5>      
-        </div> 
+                 檢視一:先看連結的圖片是否上傳，圖片名稱是否跟連結的名稱一致
+                 檢視二:看圖片名稱是否是英文檔名或小寫。中文檔名跟英文大寫也會導致圖片有無法顯示的現象。
+                          圖片是中文檔名或英文大寫解決方法，當然是全改成英文檔名與小寫。
+            -->
+        <br>   
+
+     <!--輪播 (參考ch33_87.html)-->   
+     <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+           <li data-target="#demo" data-slide-to="0" class="active"></li>
+           <li data-target="#demo" data-slide-to="1"></li>
+           <li data-target="#demo" data-slide-to="2"></li>
+           <li data-target="#demo" data-slide-to="3"></li>
+           <li data-target="#demo" data-slide-to="4"></li>
+           <li data-target="#demo" data-slide-to="5"></li>
+           <li data-target="#demo" data-slide-to="6"></li>
+           <li data-target="#demo" data-slide-to="7"></li>
+           <li data-target="#demo" data-slide-to="8"></li>
+           <li data-target="#demo" data-slide-to="9"></li>
+           <li data-target="#demo" data-slide-to="10"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="a1-02.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="a1-13.jpg" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="a1-22.jpg" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="a1-31.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="a2-08.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="b1-01.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="b1-02.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="c1-03.jpg" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="a2-02.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="c1-07.jpg" width="300" height="400">
+            </div>
+            <div class="carousel-item">
+              <img src="c1-16.jpg" width="600" height="400">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+           <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+           <span class="carousel-control-next-icon"></span>
+        </a>
+     </div>
+     <br>  
+
     
-    <br>   
-    <br> 
-    <!--
-        <img id="fig3" src="p01.jpg" width="200" onmouseover="large(this)" onmouseout="normal(this)">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-        <img id="fig3" src="p02.JPG" width="200" onmouseover="large(this)" onmouseout="normal(this)">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img id="fig3" src="p03.jpg" width="200" onmouseover="large(this)" onmouseout="normal(this)">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
-        <img id="fig3" src="p04.JPG" width="200" onmouseover="large(this)" onmouseout="normal(this)">
-    --> 
-        <img src="p01.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-        <img src="p02.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p03.jpg" width="180">             
-    <br>  
-
-    <!--<div class="box1"> 
-    --> 
-    <!--  為什麼網頁連結的圖片路徑沒錯，圖片卻有出不來的現象
-
-            檢視一:先看連結的圖片是否上傳，圖片名稱是否跟連結的名稱一致
-            檢視二:看圖片名稱是否是英文檔名或小寫。中文檔名跟英文大寫也會導致圖片有無法顯示的現象。
-                  圖片是中文檔名或英文大寫解決方法，當然是全改成英文檔名與小寫。
-     
-        <img id="fig3" src="蛋窩之三.JPG" width="220" onmouseover="large(this)" onmouseout="normal(this)">蛋窩之三
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img id="fig3" src="花圃納涼.JPG" width="260" onmouseover="large(this)" onmouseout="normal(this)">花圃納涼
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p4.jpg" width="200" alt="圖片載入錯誤">蛋窩之三
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p5.jpg".JPG" width="240" alt="圖片載入錯誤">享用餐點
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p6.jpg".JPG" width="200" alt="圖片載入錯誤">諸蛋匯集 
-    -->       
-    <br> 
-        <img src="p04.jpg" width="180">   
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
-        <img src="p05.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p06.jpg" width="180"> 
-    <br>         
-    <br> 
-        <img src="p07.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p08.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <img src="p09.jpg" width="180"> 
-    <br>         
-    <br>
-        <img src="p10.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p11.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p12.jpg" width="180"> 
-    <br>         
-    <br>  
-        <img src="p13.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-        <img src="p14.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p15.jpg" width="180"> 
-    <br>
-    <br> 
-        <img src="p16.jpg" width="180"> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p17.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p18.jpg" width="180"> 
-    <br>
-    <br> 
-        <img src="p19.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-        <img src="p20.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p21.jpg" width="180"> 
-    <br>
-    <br> 
-        <img src="p22.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p23.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p24.jpg" width="180">   
-    <br>
-    <br>  
-        <img src="p25.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p26.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
-        <img src="p27.jpg" width="180">
-    <br>  
-
-    </tr>
-    <br>
-    <br>
-    <tr>
-    <br>
-    <div class="container">
-        <div class="alert alert-success">
-            <h5>【里仁為美】</h5>      
+        <div class="container">
+                        <!-- class="container" 見【跨平台網頁設計】32－2 Bootstrap的容器
+                             另參"https://pjchender.blogspot.com/2017/10/bs-bootstrap-4-custom-container-and.html"
+                                    筆電解析度: 1366x768
+                                    手機(sony XQ-AU52)解析度: 2520x1080
+                        -->
+            <div class="alert alert-primary">
+                <h5>【雪泥鴻爪】</h5>
+            </div>   
         </div> 
-    <br> 
-    <br>      
-        <img src="p28.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p29.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p30.jpg" width="180">           
-    <br>  
-    <br>  
-        <img src="p31.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p32.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p33.jpg" width="180">
-    <br>  
-    <br>  
-        <img src="p34.jpg" width="180">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="p35.jpg" width="180"> 
-    <br> 
-    <br>  
-    <br>  
-    <!--原設計:按（放大）才超連結原照片
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="咕咕雞照片＆影片/DSC_4564.JPG" width="260">
-            <a href="咕咕雞照片＆影片/DSC_4564.JPG">放大</a>
-        -->
-    <!--http://gifgifs.com/  : Free animated GIFs, free GIF animations ...在github網站無法顯示！！
+
+        <br>      
+            <p>
+                * 點圖放大 *
+            </p>
+            <p>
+                (1) 2021.05.28 - 2022.03.29 過港郵局旁
+            </p>
+            <tr>
+                        <!-- <tr>定義橫向列(row)的起始  </tr>定義橫向列(row)的結束 -->           
+                        <!-- 原:滑鼠移至照片放大:onmouseover="large(this)" 現:按一下照片放大:onclick="large(this)"-->
+                <img src="a1-01.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <img src="a1-02.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-03.jpg" width="180" onclick="large(this)" onmouseout="normal(this)"> 
+            </tr>           
+            <br>  
+            <br> 
+            <tr>
+                <img src="a1-04.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a1-05.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-06.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>         
+            <br>
+            <tr>
+                <img src="a1-07.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-08.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <img src="a1-09.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>         
+            <br>
+            <tr>
+                <img src="a1-10.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-11.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-12.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>         
+            <br>
+            <tr> 
+                <img src="a1-13.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <img src="a1-14.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-15.jpg" width="180" onclick="large(this)" onmouseout="normal(this)"> 
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <img src="a1-16.jpg" width="180" onclick="large(this)" onmouseout="normal(this)"> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-17.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-18.jpg" width="180" onclick="large(this)" onmouseout="normal(this)"> 
+            </tr>
+            <br>    
+            <br>
+            <tr>
+                <img src="a1-19.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <img src="a1-20.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-21.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <img src="a1-22.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-23.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-24.jpg" width="180" onclick="large(this)" onmouseout="normal(this)"> 
+            </tr>
+            <br>
+            <br>
+            <tr> 
+                <img src="a1-25.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-26.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a1-27.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <img src="a1-28.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-29.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a1-30.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <img src="a1-31.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a1-32.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a1-33.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>           
+            <br>
+            <br>
+            <br>
+            <p>
+                (2) 2022.04.05 -  里民大會旁
+            </p>
+            <br>
+            <tr>
+                <img src="a2-01.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a2-02.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a2-03.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <img src="a2-04.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a2-05.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a2-06.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <img src="a2-07.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="a2-08.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                <img src="a2-09.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>           
+            <br>  
+            <br> 
+            <br>   
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
-        <img src="http://gifgifs.com//animations/nature/flowers/Blue_flower.gif" 
-            border=0 alt="http://gifgifs.com" width="100">
-    -->
+        <div class="container">
+            <div class="alert alert-danger">    
+                <h5>【前輩風采】</h5>      
+            </div>  
+        </div>
+            <br>
+            <p>
+                * 點圖放大 *
+            </p> 
+            <p>
+                (1) 寧靜街＆新竹芎林（林老師、張老師伉儷飼養）
+            </p>
+            <tr>
+                <img src="b1-01.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="b1-02.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="b1-03.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br> 
+            <br>
+            <tr>
+                <img src="b1-04.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="b1-05.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="b1-06.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br> 
+            <br>
+            <p>
+                (2) 中漁新村
+            </p>
+            <tr>
+                <img src="b2-01.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="b2-02.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="b2-03.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>    
+            <br> 
+            <br>  
+            <br>    
+        
+        <div class="container">
+            <div class="alert alert-success">
+                <h5>【里仁為美】</h5>
+            </div>  
+        </div> 
+            <br> 
+            <p>
+                * 點圖放大 *
+            </p>
+            <tr>   
+                <img src="c1-01.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-02.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-03.jpg" width="180" onclick="large(this)" onmouseout="normal(this)"> 
+            </tr>        
+            <br>  
+            <br>
+            <tr> 
+                <img src="c1-04.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-05.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-06.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br>  
+            <br> 
+            <tr> 
+                <img src="c1-07.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-08.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-09.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>    
+            <br> 
+            <br>
+            <tr> 
+                <img src="c1-10.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-11.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-12.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>    
+            <br> 
+            <br>
+            <tr> 
+                <img src="c1-13.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-14.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-15.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>
+            <br> 
+            <br>
+            <tr> 
+                <img src="c1-16.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-17.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="c1-18.jpg" width="180" onclick="large(this)" onmouseout="normal(this)">
+            </tr>    
+            <br> 
+            <br>             
+            <br> 
+                 <!--嵌入google地圖:1開啟gmap 2選擇地點 3按分享 4按嵌入地圖 5複製html 6貼入html
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.4457174880288!2d121.73617535136522!3d25.105536104377837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a781751b3656f33!2z5Z-66ZqG6YGO5riv6Lev6YO15bGA5Z-66ZqGOOaUr-WxgA!5e0!3m2!1szh-TW!2stw!4v1628050697820!5m2!1szh-TW!2stw" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy">      
+                google map
+                </iframe> 
+                -->
+                <a href="map.html">前往--> google-map</a>
+            <br>     
+            <br>  
+            <br> 
+            <br> 
   
     </CENTER>    
 </body>
